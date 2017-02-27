@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/bootstrap.min.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<form action="/push" method="post" enctype="application/x-www-form-urlencoded">
+    <label>PIN:</label>
+    <input name="pins" type="text"/>
+    <br/>
+    <label>Message:</label>
+    <input name="message" type="text"/>
+    <button type="submit">Send</button>
+</form>
+</body>
+</html>
